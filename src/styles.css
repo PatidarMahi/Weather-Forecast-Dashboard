@@ -1,0 +1,151 @@
+/* src/styles.css */
+:root {
+  --primary-bg: #4a90e2; /* Primary background color */
+  --secondary-bg: #ffffff; /* Secondary background color */
+  --text-color: #333333; /* Text color */
+  --accent-color: #3498db; /* Accent color for buttons */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?weather');
+  background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('https://img.freepik.com/free-vector/aesthetic-purple-sky-background-vector-glitter-clouds-design_53876-157556.jpg?size=626&ext=jpg&ga=GA1.2.969831894.1654975018&semt=ais');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+.app {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 14px 20px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #297fb8;
+}
+
+.label {
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+
+.space {
+  margin-bottom: 20px;
+}
+
+.weather-details,
+.forecast {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--text-color);
+}
+
+.forecast-list {
+  display: flex;
+  overflow-x: auto; 
+}
+
+.forecast-item {
+  flex: 0 0 auto; 
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--text-color);
+  min-width: 150px; /* Minimum width for each forecast item */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  search-bar {
+    width: 100%;
+  }
+
+  .forecast-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-item {
+    flex: 0 0 80%; /* Adjust the width for smaller screens */
+  }
+  
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 14px 20px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%; /* Set width to 48% to fit two buttons in a row */
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
